@@ -31,3 +31,14 @@ L’inconvénient des protocoles sans état est qu’ils peuvent diminuer les pe
 
 Question 5:
 
+- Les URL de données sont composées de quatre parties : un préfixe ( data:), un type MIME indiquant le type de données, un base64jeton facultatif s'il n'est pas textuel et les données elles-mêmes :
+      `data:[<mediatype>][;base64],<data>`
+
+Le `mediatype` est d'une chaîne de type MIME , comme `'image/jpeg'` pour un fichier image JPEG. Si elle est omise, la valeur par défaut est `text/plain;charset=US-ASCII`.
+
+Si les données contiennent des caractères définis dans la RFC 3986 comme caractères réservés , ou contiennent des caractères d'espacement, des caractères de nouvelle ligne ou d'autres caractères non imprimables, ces caractères doivent être codés en pourcentage .
+
+Si les données sont textuelles, on peut incorporer le texte (en utilisant les entités ou les échappements appropriés en fonction du type du document englobant). Sinon, on peut  spécifier `base64` d'incorporer des données binaires codées en base64.
+
+
+

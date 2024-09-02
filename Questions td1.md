@@ -40,5 +40,24 @@ Si les données contiennent des caractères définis dans la RFC 3986 comme cara
 
 Si les données sont textuelles, on peut incorporer le texte (en utilisant les entités ou les échappements appropriés en fonction du type du document englobant). Sinon, on peut  spécifier `base64` d'incorporer des données binaires codées en base64.
 
+Question 6:
+
+Les codes d'état de réponse HTTP indiquent si une requête HTTP spécifique a été exécutée avec succès. Les réponses sont regroupées en cinq classes :
+
+- Réponses informatives ( 100 – 199)
+  > exemple: `100` Continue 
+  >> Cette réponse intermédiaire indique que le client doit poursuivre la demande ou ignorer la réponse si la demande est déjà terminée.
+- Réponses réussies ( 200 – 299)
+  > exemple: `201` Created
+  >> La requête a réussi et une nouvelle ressource a été créée en conséquence. Il s'agit généralement de la réponse envoyée après `POST` des requêtes ou certaines `PUT` requêtes.
+- Messages de redirection ( 300 – 399)
+  > exemple: `301` Moved Permanently
+  >> L'URL de la ressource demandée a été modifiée de manière permanente. La nouvelle URL est indiquée dans la réponse.
+- Réponses d’erreur du client ( 400 – 499)
+  > exemple: `404` Not Found
+  >> Le serveur ne trouve pas la ressource demandée. Dans le navigateur, cela signifie que l'URL n'est pas reconnue. Dans une API, cela peut également signifier que le point de terminaison est valide mais que la ressource elle-même n'existe pas. Les serveurs peuvent également envoyer cette réponse au lieu de 403 Forbiddenmasquer l'existence d'une ressource à un client non autorisé. Ce code de réponse est probablement le plus connu en raison de son apparition fréquente sur le Web.
+- Réponses d'erreur du serveur ( 500 – 599)
+  > exemple: `504` Gateway Timeout
+  >> Cette réponse d'erreur est donnée lorsque le serveur agit comme une passerelle et ne peut pas obtenir de réponse à temps.
 
 

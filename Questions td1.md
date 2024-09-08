@@ -60,6 +60,20 @@ Les codes d'état de réponse HTTP indiquent si une requête HTTP spécifique a 
   > exemple: `504` Gateway Timeout
   >> Cette réponse d'erreur est donnée lorsque le serveur agit comme une passerelle et ne peut pas obtenir de réponse à temps.
 
+Question 7:
+
+- En HTTP, la négociation de contenu est le mécanisme utilisé pour servir différentes représentations d'une ressource à partir du même URI pour aider l'agent utilisateur à indiquer la représentation la plus adaptée à l'utilisatrice ou à l'utilisateur (par exemple, la langue du document, le format d'image ou l'encodage à utiliser pour le contenu).
+
+**Les principes de la négociation de contenu**
+- Un document donné est défini comme une ressource. Lorsqu'un client souhaite obtenir une ressource, il la demande via une URL. Le serveur utilise alors cette URL pour choisir l'une des variantes disponibles. Chaque variante est appelée une représentation. Le serveur renvoie alors une représentation donnée au client. La ressource, ainsi que chacune de ses représentations, dispose d'une URL spécifique. La négociation de contenu détermine quelle représentation donnée est utilisée lorsque la ressource est demandée. Il existe plusieurs méthodes de négociation entre le client et le serveur.
+
+![](https://developer.mozilla.org/fr/docs/Web/HTTP/Content_negotiation/httpnego.png)
+
+La représentation la plus adaptée est choisie selon l'un de ces deux mécanismes :
+
+- Des en-têtes HTTP spécifiques envoyés par le client (négociation menée par le serveur ou négociation proactive) : il s'agit de la méthode standard pour négocier un type de ressource donné.
+- Les codes de réponse HTTP `300 Multiple Choices`, `406 Not Acceptable` ou `415 Unsupported Media Type` envoyés par le serveur (négociation menée par l'agent ou négociation réactive), sont utilisés comme mécanismes de recours.
+
 Question 10:
 
 **Request Header**
@@ -118,8 +132,3 @@ Question 10:
 |Vary|Indique quels champs d’en-tête doivent être considérés comme variables si un fichier est demandé dans le cache|Vary: User-Agent (= le serveur contient différentes versions de fichiers selon l’User Agent)|
 |Via|Via quels proxies la réponse a été envoyée|Via : 1.1www.exemple.fr|
 
-
-
-
-
-faire quest 7

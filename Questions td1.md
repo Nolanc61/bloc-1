@@ -12,7 +12,7 @@ Question 2:
 | Une réponse réussie a du corps | OUI | OUI |
 | Sûr |  OUI  |  NON   |
 | Idempotent | OUI | NON |
-| Peut être mis en cache |  OUI  |  Uniquement si les informations sur la fraîcheur sont incluses   |
+| Peut être mis en cache |  OUI  |  Seulement si une information de péremption est incluse   |
 | Autorisé dans les formulaires HTML | OUI | OUI |
 
 
@@ -60,4 +60,14 @@ Les codes d'état de réponse HTTP indiquent si une requête HTTP spécifique a 
   > exemple: `504` Gateway Timeout
   >> Cette réponse d'erreur est donnée lorsque le serveur agit comme une passerelle et ne peut pas obtenir de réponse à temps.
 
+Question 10:
+
+| Champ d'en-tête| Signification | Exemple |
+|----|:---:|:---:|
+|Accept|Les types de contenu que le client peut traiter ; si le champ est vide, il s’agit de tous les types de contenu.|Accept: text/html, application/xml|
+|Accept-Charset|Quels jeux de caractères le client peut afficher.|Accept-Charset: utf-8|
+|Accept-Encoding|Les formats compressés pris en charge par le client.|Accept-Encoding: gzip|
+|Accept-Language|Version linguistique souhaitée|Accept-Language: fr-FR|
+|Authorization|Données d’authentification (par exemple pour un login)|Basic WjbU7D25zTAlV2tZ7==|
+|Cache-Control|Options du mécanisme de mise en cache|Cache-Control: no-cache|
 

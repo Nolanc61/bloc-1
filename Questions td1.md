@@ -55,7 +55,7 @@ Les codes d'état de réponse HTTP indiquent si une requête HTTP spécifique a 
   > L'URL de la ressource demandée a été modifiée de manière permanente. La nouvelle URL est indiquée dans la réponse.
 - Réponses d’erreur du client (400 – 499)  
   exemple: `404` Not Found
-  > Le serveur ne trouve pas la ressource demandée. Dans le navigateur, cela signifie que l'URL n'est pas reconnue. Dans une API, cela peut également signifier que le point de terminaison est valide mais que la ressource elle-même n'existe pas. Les serveurs peuvent également envoyer cette réponse au lieu de 403 Forbiddenmasquer l'existence d'une ressource à un client non autorisé. Ce code de réponse est probablement le plus connu en raison de son apparition fréquente sur le Web.
+  > Le serveur ne trouve pas la ressource demandée. Dans le navigateur, cela signifie que l'URL n'est pas reconnue. Dans une API, cela peut également signifier que le point de terminaison est valide mais que la ressource elle-même n'existe pas. Les serveurs peuvent également envoyer cette réponse au lieu de 403 Forbidden pour masquer l'existence d'une ressource à un client non autorisé. Ce code de réponse est probablement le plus connu en raison de son apparition fréquente sur le Web.
 - Réponses d'erreur du serveur (500 – 599)  
   exemple: `504` Gateway Timeout
   > Cette réponse d'erreur est donnée lorsque le serveur agit comme une passerelle et ne peut pas obtenir de réponse à temps.

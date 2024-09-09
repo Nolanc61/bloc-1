@@ -1,8 +1,15 @@
 body {
-    background-color: brown;
+    background-color: cyan;
 }
 
 h1 {
-    color: rgb(230, 0, 255);
+    color: chocolate;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    border: 1mm ridge red;
+    text-align-last: justify;
+    display: table;
+    margin: left;
 }

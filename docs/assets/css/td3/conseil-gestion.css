@@ -1,0 +1,30 @@
+body{
+    background-color: lightgray;
+    background-image: url("../../images/df-min.jpg");
+    margin: 0;
+}
+
+.container{
+    background-color: blue;
+
+}
+
+.container-top{
+    text-align: justify;
+    background-color: red;
+    border-radius: 10px;
+}
+
+footer{
+    background-color: rgb(71, 68, 68);
+    color: rgb(200, 200, 200);
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    padding: 1rem;
+    bottom: 0;
+}
+
+a{
+    color:rgb(200, 200, 200);
+}

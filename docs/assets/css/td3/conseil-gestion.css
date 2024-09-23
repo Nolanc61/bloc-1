@@ -1,22 +1,119 @@
 body{
-    background-color: lightgray;
+    background-color: #dedad9;
     background-image: url("../../images/df-min.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 1500px;
     margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+.lien-top{
+    color: white;
 }
 
-.container{
-    background-color: blue;
-
+.container-all{
+    align-content: space-between;
 }
 
 .container-top{
-    text-align: justify;
-    background-color: red;
+    color: white;
+    text-align: center;
+    background-color: #f56838;
+    box-shadow: 0px 5px 10px black;
+    max-width: 400px;
     border-radius: 10px;
+    margin: 50px auto;
+    padding: 1rem;
+    }
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+.container1{
+    border-radius: 10px;
+    margin: auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    box-shadow: 0px 5px 10px black;
+    height: 250px;
+    width: 200px;
+}
+
+.font1{
+    padding: 0px;
+    border-radius: 40px;
+    background-color: #f56838;
+    width: 70px;
+}
+
+.container2{
+    border-radius: 10px;
+    margin: auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    box-shadow: 0px 5px 10px black;
+    height: 250px;
+    width: 200px;
+}
+
+.font2{
+    padding: 0px;
+    border-radius: 40px;
+    background-color: #f56838;
+    width: 79px;
+    height: 79px;
+}
+
+.container3{
+    border-radius: 10px;
+    margin: auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    box-shadow: 0px 5px 10px black;
+    height: 250px;
+    width: 200px;
+}
+
+.font3{
+    padding: 0px;
+    border-radius: 40px;
+    background-color: #f56838;
+    width: 75px;
+    height: 75px;
+}
+
+.container4{
+    border-radius: 10px;
+    margin: auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    box-shadow: 0px 5px 10px black;
+    height: 250px;
+    width: 200px;
+}
+
+.font4{
+    padding: 0px;
+    border-radius: 40px;
+    background-color: #f56838;
+    width: 75px;
+    height: 75px;
+}
+
+.fa-solid{
+    font-size: 50px;
+    margin: 10px;
+    color:#f5f5f5;
 }
 
 footer{
-    background-color: rgb(71, 68, 68);
+    background-color: #2e2e2e;
     color: rgb(200, 200, 200);
     position: fixed;
     text-align: center;

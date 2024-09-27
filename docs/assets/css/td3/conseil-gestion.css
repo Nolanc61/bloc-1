@@ -43,6 +43,7 @@ body{
     box-shadow: 0px 5px 10px black;
     height: 250px;
     width: 200px;
+    flex-wrap: wrap;
 }
 
 .font1{
@@ -60,6 +61,7 @@ body{
     box-shadow: 0px 5px 10px black;
     height: 250px;
     width: 200px;
+    flex-wrap: wrap;
 }
 
 .font2{
@@ -78,6 +80,7 @@ body{
     box-shadow: 0px 5px 10px black;
     height: 250px;
     width: 200px;
+    flex-wrap: wrap;
 }
 
 .font3{
@@ -96,6 +99,7 @@ body{
     box-shadow: 0px 5px 10px black;
     height: 250px;
     width: 200px;
+    flex-wrap: wrap;
 }
 
 .font4{

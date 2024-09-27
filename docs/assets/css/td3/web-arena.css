@@ -1,0 +1,94 @@
+body{
+    font-family: "Montserrat";
+}
+
+.home-menu{
+    background-image: url("../../images/about us/header-bg.jpg");
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    padding: 10px;
+    height: 100px;
+    width: 100%;
+}
+
+.home-menu-left{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 10px;
+}
+
+nav li{
+    display: flex;
+    display: inline-block;
+}
+
+.home-menu-right{
+    display: flex;
+    flex-direction: row;
+    align-items: right;
+    justify-content: right;
+    padding: 10px;
+    margin: 10px;
+
+}
+
+hr{
+    width: 10;
+    width: 50px;
+    color: blue;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container1{
+    background-color: blank;
+    text-align: center;
+    width: 600px;
+    height: 160px;
+    margin: 10px;
+}
+
+.container2{
+    background-color: blank;
+    align-items: end;
+    width: 600px;
+    height: 160px;
+    text-align: center;
+    margin: 10px
+}
+
+.container3{
+    justify-content: center;
+    align-items: center;
+}
+
+footer{
+    background: linear-gradient(to right, #223787, #52add4);
+    color: #effcfd;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    padding: 0.5em;
+    bottom: 0;
+}
+
+button{
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    border-width: 3px;
+    width: 50px;
+    height: 50px;
+    background-color: green;
+    color: blue;
+}

@@ -7,7 +7,7 @@ body {
 }
 
 header {
-  background-color: #4CAF50;
+  background-color: #0040ff;
   color: white;
   padding: 1rem;
   text-align: center;
@@ -35,7 +35,7 @@ section {
 }
 
 h2 {
-  color: #4CAF50;
+  color: #0040ff;
 }
 
 a {
@@ -58,6 +58,6 @@ footer {
 }
 
 footer a {
-  color: #4CAF50;
+  color: #0040ff;
   margin: 0 0.5rem;
 }

@@ -1,0 +1,235 @@
+body{
+    font-family: "Montserrat";
+}
+
+.home-menu{
+    background-image: url("../../images/about us/header-bg.jpg");
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 10px;
+    height: 100px;
+    width: 100%;
+}
+
+.home-menu-left{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: 100px;
+}
+
+nav ol {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ol li {
+    display: inline-block;
+    margin-right: 12px;
+}
+
+nav ol li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ol li a:hover {
+    text-decoration: underline;
+}
+
+.home-menu-right{
+    display: flex;
+    flex-direction: row;
+    align-items: right;
+    justify-content: flex-end;
+    padding: 10px;
+    margin-right: 20px;
+
+}
+
+hr{
+    width: 10;
+    width: 50px;
+    color: blue;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container1{
+    background-color: blank;
+    text-align: center;
+    width: 600px;
+    height: 160px;
+    margin: 10px;
+}
+
+.container2{
+    background-color: blank;
+    align-items: end;
+    width: 600px;
+    height: 160px;
+    text-align: center;
+    margin: 10px
+}
+
+.container3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+footer{
+    background: linear-gradient(to right, #223787, #52add4);
+    color: #effcfd;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    padding: 0.5em;
+    bottom: 0;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    border-radius: 6px;
+    margin-left: 230px;
+    width: 130px;
+    height: 20px;
+    padding: 0.3em;
+    padding-bottom: 2px;
+    background-color: lightgrey;
+    text-decoration: none;
+    color: black;
+}
+
+.button:hover{
+    background-color: rgb(181, 174, 174);
+}
+
+/* Blog */
+
+.content{
+    display: flex;
+    justify-content: space-around;
+    margin: 50px;
+    padding: 20px;
+}
+
+.content2a{
+    padding: 20px;
+}
+
+.content2b{
+    padding: 20px;
+}
+
+.content2c{
+    padding: 20px;
+}
+
+.content h2{
+    border-bottom: #3088e7;
+}
+
+.content1{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-decoration: none;
+    padding: 20px;
+    text-align: left;
+    white-space : nowrap;
+}
+
+.content1 ul li{
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 4px;
+    list-style-type: none;
+}
+
+.content1 ul i{
+    color: #3088e7;
+    margin: 3px;
+    text-align: left;
+}
+
+.content1 ul li:hover{
+    color: #3088e7;
+}
+
+.content2{
+    display: flex;
+    margin-left: 0;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: right;
+    padding-right: 20px;
+}
+
+.content3{
+    display: flex;
+    flex-direction: column;
+}
+
+.content3 span{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.content2 img{
+    width: 500px;
+}
+
+.content3 img{
+    width: 250px;
+}
+
+.mini-box{
+    white-space : nowrap;
+    text-decoration: none;
+}
+
+.mini-box a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.mini-box h6{
+    display: flex;
+    background-color:#5788b4;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    width: 55px;
+    text-align: center;
+    justify-content: center;
+}
+
+.mini-box h6:hover{
+    background-color: #3088e7;
+}
+
+.content2 .button{
+    margin-left: 10px;
+    text-align: center;
+    width: 110px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.content2 h3{
+    color: #3088e7;
+}

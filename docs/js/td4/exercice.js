@@ -51,4 +51,20 @@ addition.addEventListener('click', ()=>{
 })
 
 // afficher une image en fonction de la sélection
-
+const menuDeroulant = document.getElementById('menu_deroulant');
+const carImage = document.getElementById('car-image');
+menuDeroulant.addEventListener('change', function() {
+   const selectedValue = this.value;
+      if (selectedValue === "f40") {
+            carImage.src = "../../assets/images/td4/f40.avif";
+            carImage.style.display = "block";
+      } else if (selectedValue === "gt3rs") {
+            carImage.src = "../../assets/images/td4/gt3rs.avif";
+            carImage.style.display = "block";
+      } else if (selectedValue === "jesko") {
+            carImage.src = "../../assets/images/td4/jesko.webp";
+            carImage.style.display = "block";
+      } else {
+            carImage.style.display = "none";
+      }
+});

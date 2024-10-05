@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>Exercice</title>
+  <link rel="stylesheet" href="../../assets/css/td4/exercice.css">
 </head>
 <body>
     <button id="btgreen">GREEN</button>
@@ -34,10 +35,32 @@
     <div id="image-container">
         <img id="car-image" src="" alt="Car Image" style="display:none; width:500px; height:auto;">
     </div>
+    <br><br>
+    <div class="alerte">Alerte au passage de la souris</div>
+    <br>
+    <div id="clock"></div>
+    <br>
+    <div id="elementASupprimer">Ceci est l'élément que vous pouvez supprimer.</div>
+    <button id="deleteButton">Supprimer l'élément</button>
+    <br><br>
+    <label for="toggleCheckbox">Afficher l'élément</label>
+    <input type="checkbox" id="toggleCheckbox">
+    <br><br>
+    <div id="elementACacher">Ceci est l'élément que vous pouvez afficher ou cacher.</div>
+    <br><br>
+    <h2>Formulaire de Contact</h2>
+    <form id="contactForm">
+        <label for="name" id="label-name">Nom :</label>
+        <input type="text" id="name" name="name" required><br><br>
 
-	<iframe src="https://www.google.com/maps/embed" width="500px" height="300px" style="border:0px;">
-	</iframe>
-    
+        <label for="email" id="label-email">Email :</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="message" id="label-message">Message :</label>
+        <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+        <button type="submit" id="send-button">Envoyer</button>
+    </form>
 </body>
 <script src="../../js/td4/exercice.js"></script>
 </html>

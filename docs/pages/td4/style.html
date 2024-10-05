@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../assets/css/td4/style.css">
+    <title>Style</title>
+</head>
+<body>
+    <div class="container">
+        <div class="typing">Changer le style du texte</div>
+    </div>
+    <p>Cliquez sur les cases à cocher
+    et utilisez les autres éléments
+    ci-dessous pour changer les attributs
+    de style du texte affiché dans la zone :</p>
+    <input type="checkbox" id="boldCheckbox">
+    <label for="boldCheckbox">Gras</label>
+
+    <input type="checkbox" id="italicCheckbox">
+    <label for="italicCheckbox">Italique</label>
+
+    <input type="checkbox" id="underlineCheckbox">
+    <label for="underlineCheckbox">Souligné</label>
+
+    <input type="checkbox" id="strikeCheckbox">
+    <label for="strikeCheckbox">Barré</label>
+
+    <label for="pickcolor"></label>
+    <input type="color" id="pickcolor">
+
+    <input type="number" id="fontSize" placeholder="Taille de texte">
+
+    <select name="police" id="police">
+        <option value="Courrier">Courrier</option>
+        <option value="Arial">Arial</option>
+        <option value="Times New Roman">Times New Roman</option>
+        <option value="Verdana">Verdana</option>
+    </select>
+    
+    <input type="button" id="increaseButton" value="Augmenter taille">
+    <input type="button" id="decreaseButton" value="Diminuer taille">
+    <div class="test">
+        <p id="example-text">Texte exemple pour illustrer le
+        changement des attributs de style</p>
+    </div>
+    <script src="../../js/td4/style.js"></script>
+</body>
+</html>

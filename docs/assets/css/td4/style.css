@@ -1,0 +1,73 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: lightgray;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    color: red;
+}
+
+.typing {
+    font-family: 'Courier', monospace;
+    font-size: 24px;
+    border-right: 2px solid #7E2EA0;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    animation: typing 4s steps(30, end) infinite, cursor 0.8s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    70% { width: 473px; }
+    90% { width: 473px; }
+    100% { width: 0; }
+}
+
+@keyframes cursor {
+    50% { border-color: transparent; }
+    100% { border-color: #7E2EA0; }
+}
+
+#pickcolor {
+    border-radius: 5px;
+    background-color: lightgrey;
+    border: none;
+}
+
+select {
+    height: 20px;
+}
+
+.test {
+    display: inline-flex;
+    justify-content: center;
+    background-color: lightgrey;
+    padding: 8px;
+    margin: 10px;
+    width: 800px;
+    border: 5px solid transparent;
+    border-image: linear-gradient(45deg, deepskyblue, magenta, yellow, green) 1;
+}
+
+
+input[type="checkbox"] {
+    accent-color: deepskyblue;
+}
+
+input[type="button"], button {
+    border-radius: 3px;
+    border-width: 1px;
+    height: 20px;
+}
+
+input[type="button"]:hover , button:hover{
+    background-color: grey;
+}
+
+

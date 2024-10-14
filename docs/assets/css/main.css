@@ -32,7 +32,7 @@ header h1 {
 	white-space: nowrap;
 	overflow: hidden;
 	display: inline-block;
-	animation: typing 5s steps(40, end) infinite, cursor 0.8s step-end infinite;
+	animation: typing 8s steps(70, end) infinite, cursor 0.8s step-end infinite;
 }
 
 @keyframes typing {

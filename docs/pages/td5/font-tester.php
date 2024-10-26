@@ -35,6 +35,6 @@ echo "<div style='margin-top: 10px;'>
 
 
 // Défini la couleur et taille dans une div avec 'style' grâce aux variables
-echo "<div style='color: $color; font-size: ${size}px; margin-top: 20px;'>$msg</div>";
+echo "<div style='color: $color; font-size: '$size'px; margin-top: 20px;'>$msg</div>";
 
 ?>

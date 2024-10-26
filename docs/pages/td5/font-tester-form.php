@@ -20,6 +20,6 @@ echo '
 ';
 
 // Afficher le message stylisé selon les paramètres
-echo "<div style='color: $color; font-size: {$size}px; margin-top: 20px;'>$msg</div>";
+echo "<div style='color: $color; font-size: '$size'px; margin-top: 20px;'>$msg</div>";
 
 ?>

@@ -1,5 +1,5 @@
 <?php
-// 1. Tableau de 30 paragraphes de Lorem Ipsum
+// Tableau de 30 paragraphes de Lorem Ipsum
 $paragraphs = [
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "Vestibulum vehicula orci et nulla dictum, vitae cursus velit vestibulum.",
@@ -33,7 +33,7 @@ $paragraphs = [
     "Donec sit amet ligula ac sapien tincidunt dictum."
 ];
 
-// 2. Affichage du formulaire de sélection du nombre de paragraphes
+// Affichage du formulaire de sélection du nombre de paragraphes
 echo '
 <form method="POST">
     <label for="num_paragraphs">Nombre de paragraphes :</label>

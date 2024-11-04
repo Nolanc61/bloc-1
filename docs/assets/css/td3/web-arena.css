@@ -1,9 +1,11 @@
 body{
     font-family: "Montserrat";
+    margin: auto;
+    padding: auto;
 }
 
 .home-menu{
-    background-image: url("../../images/about us/header-bg.jpg");
+    background-image: url("../../images/td3/about us/header-bg.jpg");
     width: 100%;
     background-position: center;
     background-size: cover;

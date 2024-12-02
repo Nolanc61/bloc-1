@@ -1,7 +1,8 @@
 body{
     background-color: #dedad9;
-    background-image: url("../../images//blog/df-min.jpg");
+    background-image: url("../../images/td3/blog/df-min.jpg");
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     background-position: top;
     background-size: 1500px;
@@ -110,21 +111,6 @@ h2{
     background-color: red;
     border-radius: 10px;
     padding: 20px;
-}
-
-.container1{
-    border-radius: 10px;
-    padding: 1%;
-}
-
-.container2{
-    border-radius: 10px;
-    padding: 1%;
-}
-
-.container3{
-    border-radius: 10px;
-    padding: 1%;
 }
 
 .container4{

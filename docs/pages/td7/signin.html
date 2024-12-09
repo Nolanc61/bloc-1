@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="../../assets/css/td7/signin.css">
+    <script defer src="signin.js"></script>
+</head>
+<body>
+    <h1>CRÉATION DE COMPTE</h1>
+    <form action="create-account.php" id="signupForm">
+        <label for="mail">Mon adresse mail</label>
+        <input type="mail" id="mail" placeholder="monadresse@domaine.com" required>
+        <span class="error" id="mailError"></span>
+
+        <label for="password">Mon mot de passe</label>
+        <input type="password" id="password" placeholder="**********" required>
+        <div class="strength-container">
+            <div class="strength-bar" id="strengthBar"></div>
+            <span id="strengthText">Force : Aucune</span>
+        </div>
+        <span class="error" id="passwordError"></span>
+
+        <label for="confirm">Confirmation du mot de passe</label>
+        <input type="password" id="confirm" placeholder="**********" required>
+        <span class="error" id="confirmError"></span>
+
+        <input type="submit" value="CRÉER LE COMPTE" />
+    </form>
+</body>
+</html>

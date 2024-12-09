@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>Contact</title>
+    <link rel="stylesheet" href="../../assets/css/td7/contact.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <h1>Nous <br>contacter</h1>
+            <p><strong>Nous serions ravis de vous lire...</strong></p>
+        </div>
+        <div class="right">
+            <form id="contactForm" action="./submit-contact.php" method="post">
+                <label for="name">Prénom&nbsp;:</label>
+                <input type="text" id="name" name="name" placeholder="Entrez votre prénom" required pattern="^[A-Za-z]+$" title="Le prénom ne doit contenir que des lettres." />
+
+                <label for="lastname">Nom&nbsp;:</label>
+                <input type="text" id="lastname" name="lastname" placeholder="Entrez votre nom" required pattern="^[A-Za-z]+$" title="Le nom ne doit contenir que des lettres." />
+
+                <label for="mail">Mail&nbsp;:</label>
+                <input type="email" id="mail" name="mail" placeholder="Entrez votre e-mail" required />
+
+                <label for="msg">Message&nbsp;:</label>
+                <textarea id="msg" name="message" placeholder="Entrez un commentaire" maxlength="500" required></textarea>
+
+                <input type="submit" value="Soumettre" />
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

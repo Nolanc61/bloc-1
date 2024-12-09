@@ -1,0 +1,99 @@
+/* Style général */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+}
+
+h1 {
+    background-color: #004C99;
+    color: #FFFFFF;
+    padding: 15px;
+    max-width: 600px;
+    min-width: 390px;
+    width: 70%;
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+label {
+    display: block;
+    margin: 20px 0 5px;
+    font-size: 14px;
+}
+
+input[type="mail"], input[type="password"] {
+    width: 100%;
+    max-width: 400px;
+    min-width: 370px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+input[type="mail"]::placeholder {
+    color: #999;
+}
+
+input[type="submit"] {
+    font-weight: bold;
+    display: block;
+    background-color: #FFFFFF;
+    color: #1E72C6;
+    border: 3px solid #1E72C6;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    max-width: 250px;
+    width: 70%;
+}
+
+input[type="submit"]:hover {
+    background-color: #002244;
+    color: #FFFFFF;
+    border: 3px solid #002244;
+}
+
+/* Aligner le formulaire */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #FFFFFF;
+    width: 90%;
+    max-width: 450px;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+    display: none; /* Cache les erreurs par défaut */
+}
+
+/* Barre de force */
+.strength-container {
+    width: 100%; /* Adapte la largeur au conteneur */
+    max-width: 420px; /* Même largeur que les champs */
+    margin-top: 5px;
+}
+
+.strength-bar {
+    width: 0%; /* Commence vide */
+    height: 10px;
+    background-color: red;
+    border-radius: 5px;
+    transition: width 0.3s, background-color 0.3s;
+}
+
+#strengthText {
+    font-size: 12px;
+    margin-top: 5px;
+    color: #333;
+    display: block;
+}

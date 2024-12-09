@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1>CRÉATION DE COMPTE</h1>
-    <form id="signupForm">
+    <form action="create-account.php" id="signupForm">
         <label for="mail">Mon adresse mail</label>
         <input type="mail" id="mail" placeholder="monadresse@domaine.com" required>
         <span class="error" id="mailError"></span>
@@ -17,7 +17,7 @@
         <input type="password" id="password" placeholder="**********" required>
         <div class="strength-container">
             <div class="strength-bar" id="strengthBar"></div>
-            <span id="strengthText">Force : Faible</span>
+            <span id="strengthText">Force : Aucune</span>
         </div>
         <span class="error" id="passwordError"></span>
 

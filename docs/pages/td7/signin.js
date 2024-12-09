@@ -5,6 +5,7 @@ const emailError = document.getElementById("mailError");
 const passwordInput = document.getElementById("password");
 const passwordError = document.getElementById("passwordError");
 const strengthBar = document.getElementById("strengthBar");
+const strengthText = document.getElementById("strengthText");
 const confirmPasswordInput = document.getElementById("confirm");
 const confirmError = document.getElementById("confirmError");
 
@@ -25,33 +26,26 @@ emailInput.addEventListener("input", () => {
 // Validation mot de passe
 passwordInput.addEventListener("input", () => {
     const password = passwordInput.value;
-    let strength = 0;
 
-    // Vérification des critères de force
-    if (password.length >= 8) strength++; // Longueur minimale
-    if (/[A-Z]/.test(password)) strength++; // Contient une majuscule
-    if (/[0-9]/.test(password)) strength++; // Contient un chiffre
-    if (/[@$!%*?&#]/.test(password)) strength++; // Contient un caractère spécial
+    // Critères de validation
+    const criteria = [
+        password.length >= 8, // Taille
+        /[A-Z]/.test(password), // Majuscule
+        /\d/.test(password), // Nombre
+        /[@$!%*?&#]/.test(password) // Caractère spécial
+    ];
 
-    // Mise à jour de la barre et du texte
-    strengthBar.style.width = `${strength * 26.3}%`;
+    const strength = criteria.filter(Boolean).length; // Nombre de critères remplis
+    const percentages = [15, 30, 55, 70, 100]; // Valeurs en %
+    const colors = ["red", "orange", "yellow", "#7cb518", "green"]; // Couleurs associées
 
-    const strengthText = document.getElementById("strengthText");
-    if (strength === 1) {
-        strengthBar.style.backgroundColor = "red";
-        strengthText.textContent = "Force : Faible";
-    } else if (strength === 2) {
-        strengthBar.style.backgroundColor = "orange";
-        strengthText.textContent = "Force : Moyenne";
-    } else if (strength === 3) {
-        strengthBar.style.backgroundColor = "yellow";
-        strengthText.textContent = "Force : Bonne";
-    } else if (strength === 4) {
-        strengthBar.style.backgroundColor = "green";
-        strengthText.textContent = "Force : Excellente";
-    } else {
-        strengthText.textContent = "Force : Faible";
-    }
+    // Mise à jour de la barre
+    strengthBar.style.width = `${percentages[strength]}%`;
+    strengthBar.style.backgroundColor = colors[strength];
+
+    // Texte descriptif
+    const descriptions = ["Aucune", "Faible", "Moyenne", "Bonne", "Excellente"];
+    strengthText.textContent = `Force : ${descriptions[strength]}`;
 });
 
 

@@ -79,13 +79,13 @@ form {
 /* Barre de force */
 .strength-container {
     width: 100%; /* Adapte la largeur au conteneur */
-    max-width: 400px; /* Même largeur que les champs */
+    max-width: 420px; /* Même largeur que les champs */
     margin-top: 5px;
 }
 
 .strength-bar {
     width: 0%; /* Commence vide */
-    height: 8px; /* Taille plus fine */
+    height: 10px;
     background-color: red;
     border-radius: 5px;
     transition: width 0.3s, background-color 0.3s;

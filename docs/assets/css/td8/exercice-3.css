@@ -1,0 +1,82 @@
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+}
+
+.formulaire {
+    background-color: rgb(233, 233, 233);
+    border: 1px solid lightgrey;
+    border-radius: 15px;
+    padding: 15px;
+    width: 800px;
+}
+
+input {
+    border-radius: 5px;
+    width: 370px;
+    height: 30px;
+    border: 1px solid lightgrey;
+}
+
+.email input {
+    padding-right: 24px;
+}
+
+.message input {
+    width: 99%;
+}
+
+.submit input {
+    margin-top: 10px;
+    background-color: #4CAF50;
+    cursor: pointer ;
+    width: 99.8%;
+}
+
+.responsive {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 3 colonnes égales */
+}
+
+::placeholder {
+    padding-left: 5px;
+}
+
+@media (max-width: 768px) {
+    .responsive {
+        grid-template-columns: 1fr;
+    }
+
+    .formulaire {
+        background-color: rgb(233, 233, 233);
+        border: 1px solid lightgrey;
+        border-radius: 15px;
+        padding: 15px;
+        width: 400px;
+    }
+    
+    input {
+        border-radius: 5px;
+        width: 98%;
+        height: 30px;
+        border: 1px solid lightgrey;
+    }
+
+    .email input {
+        padding-right: 2px;
+    }
+    
+    .message input {
+        width: 98%;
+    }
+    
+    .submit input {
+        margin-top: 10px;
+        background-color: #4CAF50;
+        cursor: pointer ;
+        width:99.8%;
+    }
+    
+    ::placeholder {
+        padding-left: 5px;
+    }
+}

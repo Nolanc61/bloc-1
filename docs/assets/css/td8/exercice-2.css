@@ -1,0 +1,30 @@
+body {
+    font-family:'Times New Roman', Times, serif ;
+    padding: 10px;
+}
+
+p {
+    font-size: 30px;
+    padding: 15px;
+    margin: 15px;
+    width: 350px;
+    background-color: lightgrey;
+}
+
+.colonnes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colonnes égales */
+    gap: 15px;
+}
+
+@media (max-width: 1024px) {
+    .colonnes {
+        grid-template-columns: repeat(2, 1fr); /* 2 colonnes pour les écrans moyens */
+    }
+}
+
+@media (max-width: 800px) {
+    .colonnes {
+        grid-template-columns: 1fr; /* 1 colonne pour les petits écrans */
+    }
+}
